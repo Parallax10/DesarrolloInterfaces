@@ -1,0 +1,44 @@
+.divGrande{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+.cuadra2{
+  height: 50px;
+  width: 100px;
+  background-color: red;
+  z-index: -1;
+  position: relative;
+}
+.cuadrao{
+  background-color: black;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  transition: all 0.5s;
+  box-shadow: 5px 5px 5px 5px rgba(44, 44, 43, 0.479);
+  animation-name: latido;  
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: relative;
+  z-index: 1;
+}
+.cuadrao:hover{
+  background-color: red;
+  box-shadow: 5px 5px 5px 5px rgb(44, 44, 43);
+}
+.cuadrao:active{
+  transform: rotate(45deg);
+}
+@keyframes latido {
+  0%{
+    height: 200px;
+    width: 200px;
+  }
+  50%{
+    height: 300px;
+    width: 300px;
+  }
+}
